@@ -7,6 +7,7 @@
  */
 profile profiles[] = {
     /* {colorBleed, {0, 0, 0, 0}, NULL, NULL}, */
+	{colorBlank, {0, 0, 0, 0}, NULL, NULL},
     {white, {0, 0, 0, 0}, NULL, NULL},
     {red, {0, 0, 0, 0}, NULL, NULL},
     {green, {0, 0, 0, 0}, NULL, NULL},

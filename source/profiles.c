@@ -1,4 +1,5 @@
 #include "profiles.h"
+#include "light_utils.h"
 #include "matrix.h"
 #include "miniFastLED.h"
 
@@ -9,6 +10,10 @@ static const uint32_t colorPalette[] = {0xcc0000, 0xcccc00, 0x5fcc00, 0x00c7cc,
                                         0x006ecc, 0x0033ff, 0x6900cc, 0xcc00bf};
 
 #define LEN(a) (sizeof(a) / sizeof(*a))
+
+void colorBlank(led_t *currentKeyLedColors) {
+	setAllKeysToBlank(currentKeyLedColors);
+}
 
 void red(led_t *currentKeyLedColors) {
   setAllKeysColor(currentKeyLedColors, naiveDimRGB(0xFF0000));

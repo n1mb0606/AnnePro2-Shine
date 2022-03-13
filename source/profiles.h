@@ -19,6 +19,7 @@ void white(led_t *currentKeyLedColors);
 void rainbowHorizontal(led_t *currentKeyLedColors);
 void rainbowVertical(led_t *currentKeyLedColors);
 void miamiNights(led_t *currentKeyLedColors);
+void colorBlank(led_t *currentKeyLedColors);
 
 /*
  * ANIMATED
